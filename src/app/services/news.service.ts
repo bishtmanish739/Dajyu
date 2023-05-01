@@ -9,7 +9,7 @@ export class NewsService {
   api_key = 'aerDILd4JkWlzPYgyY0o6wE9Gy2QvqWt0JkHaApWlz4';
   constructor(private http: HttpClient) { }
 
-
+//
   initSources() {
     
     return this.http.get('https://api.newscatcherapi.com/v2/sources?topic=business&lang=en&countries=US' ,{ headers:{ "x-api-key": this.api_key }});
